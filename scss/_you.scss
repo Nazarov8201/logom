@@ -1,0 +1,85 @@
+
+
+
+@media only screen and (min-width: 768px) {
+      .you{
+            background: url('../images/biggest_girl.png');
+            background-repeat: no-repeat;
+            background-size: 50% 100%;
+            background-position: 80% 100%;
+            margin-top: 180px;
+      }
+}
+
+.you-inner{
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+}
+
+.you-inner-nav{
+      margin-top: 50px;
+      h3{
+            font-size: 38px;
+            color: #000;
+            font-family: 'Playfair Display';
+            text-transform: capitalize;
+      }
+}
+
+@media only screen and (min-width: 768px) {
+      .you-inner-nav{
+            width: 500px;
+      }
+}
+
+.you-inner-block{
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+      .you-inner-block{
+            justify-content: flex-start;
+            width: 70%;
+            flex-wrap: nowrap;
+      }
+}
+
+.you-inner-text{
+      font-size: 17px;
+      color: #727272;
+      font-family: 'Roboto';
+      line-height: 1.5;
+}
+
+@media only screen and (min-width: 768px) {
+      .you-inner-text{
+            width: 700px;
+      }
+}
+
+.you-inner-block-img{
+      background-color: #fff;
+      padding: 0px 30px;
+      text-align: center;
+      img{
+            max-width: 100%;
+      }
+      p{
+            text-transform: capitalize;
+            color: #000;
+            font-family: 'Playfir Display';
+            font-size: 17px;
+            margin-top: 15px;
+      }
+      
+}
+
+@media only screen and (min-width: 768px) {
+      .you-inner-block-img{
+            box-shadow: 0 0 10px 0 #ececec;
+      }
+}

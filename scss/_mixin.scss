@@ -1,0 +1,38 @@
+@mixin  hover($color) {
+
+      &:after,
+      &:before{
+          position: absolute;
+          content: "";
+          width: 0;
+          height: 0;
+          opacity: 0;
+      }
+  
+      &:after{
+          top: 0;
+          right: 40%;
+          border-left: 1px solid $color;
+          border-top: 1px solid $color;
+          transition: opacity 0s linear 0s, width 0.2s linear 0s, height 0.1s linear 0.2s;
+      }
+  
+      &:before{
+          bottom: 0;
+          left: 0;
+          border-bottom: 1px solid $color;
+          transition: opacity 0s linear 0s, width 0.2s linear 0.3s;
+      } 
+  
+      &:hover:after{
+          height: 100%;
+          width: 60%;
+          opacity: 1;
+      }
+  
+      &:hover:before{
+          height: 100%;
+          width: 40%;
+          opacity: 1;
+      }
+  }

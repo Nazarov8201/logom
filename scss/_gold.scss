@@ -1,0 +1,128 @@
+
+.gold{
+      margin-top: 40px;
+      position: relative;
+}
+
+
+.gold::before{
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background: url('../images/diamond.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      top: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+}
+
+@media only screen and (min-width: 768px) {
+      .gold{
+            margin-top: 150px;
+      }
+}
+
+
+.gold-inner{
+      display: flex;
+      justify-content: center;
+}
+
+.gold-inner-img{
+     display: none;
+}
+
+@media only screen and (min-width: 768px) {
+      .gold-inner-img{
+            flex-basis: 50%;
+            display: flex;
+            display: block;
+            img{
+                  max-width: 100%;
+                  height: auto;
+            }
+      }
+}
+
+.gold-inner-block{
+      flex-basis: 90%;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      margin-top: 90px;
+}
+
+@media only screen and (min-width: 768px) {
+      .gold-inner-block{
+            flex-basis: 50%;
+      }
+}
+
+.gold-inner-block-nav{
+      h3{
+            font-size: 38px;
+            color: #000;
+            font-family: 'Playfair Display';
+            text-transform: capitalize;
+            font-weight: 200;
+      }
+}
+
+@media only screen and (min-width: 768px) {
+      .gold-inner-block-nav{
+            h3{
+                  margin-right: 100px;
+            }
+      }
+}
+
+.gold-inner-block-text{
+      p{
+            font-size: 17px;
+            color: #787878;
+            line-height: 2;
+            font-family: 'Roboto';
+      }
+}
+
+@media only screen and (min-width: 1024px) {
+      .gold-inner-block-text{
+            p{
+                  margin-right: 120px;
+            }
+      }
+}
+
+.gold-inner-block-link{
+      position: relative;
+      margin-left: 40px;
+      padding: 20px 40px 20px 60px;
+      width: 300px;
+      text-decoration: none;
+
+      @include hover(#fd405e);
+      transition: 0.5s;
+      a{
+            text-decoration: none;
+      }
+      span{
+            color: #fd405e;
+            font-size: 14px;
+            font-family: 'Poppins';
+            text-transform: uppercase;
+      }
+}
+
+.gold-inner-block-link span::before{
+      content: "";
+      position: absolute;
+      width: 25px;
+      background-repeat: no-repeat;
+      background: url('../images/arrow.png');
+      height: 12px;
+      top: 3px;
+      left: -40px;
+}
+
